@@ -12,7 +12,7 @@ export default function Map() {
     const [trashBinPositions, setTrashBinPositions] = useState([]);
 
     function SetMarker(latitude, longitude) {
-        const imgSrc = process.env.PUBLIC_URL + "./trashbin.webp";
+        const imgSrc = "https://cdn-icons-png.flaticon.com/512/3791/3791550.png";
         const imgSize = new window.kakao.maps.Size(30, 30);
         const imgOption = { offset: new window.kakao.maps.Point(27, 69) };
 
