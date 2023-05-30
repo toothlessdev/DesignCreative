@@ -11,9 +11,7 @@ import Map from "./components/Map";
 function App() {
     return (
         <div className="App">
-            <Routes>
-                <Route path="/" element={<Map></Map>}></Route>
-            </Routes>
+            <Map></Map>
         </div>
     );
 }
