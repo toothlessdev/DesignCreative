@@ -1,0 +1,51 @@
+.shop-item-container {
+    width: 100%;
+    max-width: 600px;
+
+    margin: 50px auto;
+
+    border-radius: 20px;
+    background: #fafafa;
+    box-shadow: 35px 35px 70px #d5d5d5, -35px -35px 70px #ffffff;
+
+    display: flex;
+    justify-content: space-around;
+
+    padding: 20px;
+}
+.shop-item-container:hover {
+    cursor: pointer;
+}
+
+.shop-item-img {
+    width: 5rem;
+    height: 5rem;
+
+    background-color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 1rem;
+}
+
+.shop-item-info {
+    flex-grow: 3;
+    padding: 15px;
+}
+.shop-item-info h3 {
+}
+
+.shop-item-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: end;
+
+    padding: 15px;
+}
+
+.shop-item-icon svg {
+    padding: 5px;
+}

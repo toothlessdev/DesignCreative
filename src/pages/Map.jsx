@@ -5,11 +5,12 @@ import axios from "axios";
 import { GetQuery, regions } from "../utils/ApiQuery";
 import { DATA_ADDRESS_KEY, DATA_API_KEY, DATA_BASE_URL, KAKAO_API_KEY } from "../utils/apiKey";
 
+import Loading from "./Loading";
+
 export default function Map() {
     let map;
     const mapScript = document.createElement("script");
     const [isLoading, setIsLoading] = useState(true);
-    const [trashBinPositions, setTrashBinPositions] = useState([]);
 
     function SetMarker(latitude, longitude) {
         const imgSrc = "https://cdn-icons-png.flaticon.com/512/3791/3791550.png";
@@ -80,5 +81,10 @@ export default function Map() {
         mapScript.addEventListener("load", onLoadKakaoMap);
     }, []);
 
-    return <div id="map"></div>;
+    // render
+    // if (isLoading) {
+    //     return <Loading></Loading>;
+    // } else {
+    return <div id="map">{isLoading ? <Loading></Loading> : null}</div>;
+    // }
 }

@@ -1,0 +1,44 @@
+.camera-wrapper {
+    width: 100%;
+    height: 100vh;
+
+    position: relative;
+}
+
+.camera-container {
+    width: 100%;
+    height: 100%;
+}
+
+.test-image {
+    background: url("../assets/test.jpeg");
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.camera-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 100;
+}
+.camera-overlay svg {
+    font-size: 20rem;
+    color: white;
+
+    padding: 50px;
+}
+.camera-overlay p {
+    color: white;
+    font-size: 1.5rem;
+}
