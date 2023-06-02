@@ -8,6 +8,7 @@ export default function Home() {
     const navigate = useNavigate();
 
     useEffect(() => {
+        //
         const overlayAnimation = setTimeout(() => {
             document.querySelector(".home-img-overlay").style.opacity = 0.5;
             document.querySelector(".home-img-overlay-text").style.opacity = 1;
