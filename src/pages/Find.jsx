@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExpand } from "@fortawesome/free-solid-svg-icons";
 import "./Find.css";
 
 export default function Find() {
+    useEffect(() => {}, []);
+
     return (
         <div className="camera-wrapper">
             <div className="camera-wrapper">

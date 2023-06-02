@@ -100,7 +100,7 @@ export default function Shop() {
             <>
                 <Nav></Nav>
                 {usedItems.map((element, index) => {
-                    return <ShopItem key={index} title={element.title} description={element.description}></ShopItem>;
+                    return <ShopItem key={index} imgsrc={element.imgsrc} title={element.title} description={element.description}></ShopItem>;
                 })}
             </>
         );
@@ -112,7 +112,7 @@ export default function Shop() {
                 <Nav></Nav>
                 <Category></Category>
                 {upcycleItems.map((element, index) => {
-                    return <ShopItem key={index} title={element.title} description={element.description}></ShopItem>;
+                    return <ShopItem key={index} imgsrc={element.imgsrc} title={element.title} description={element.description}></ShopItem>;
                 })}
             </>
         );

@@ -32,8 +32,8 @@ export default function Map() {
         window.kakao.maps.load(() => {
             const mapContainer = document.getElementById("map");
             const mapOption = {
-                center: new window.kakao.maps.LatLng("35.8643405869911", "128.620277937455"), // 지도의 중심좌표
-                level: 3, // 지도의 확대 레벨
+                center: new window.kakao.maps.LatLng("35.865496", "128.593436"), // 지도의 중심좌표
+                level: 8, // 지도의 확대 레벨
             };
             map = new window.kakao.maps.Map(mapContainer, mapOption);
             console.log("Kakao MAP API Loaded.");
@@ -85,6 +85,10 @@ export default function Map() {
     // if (isLoading) {
     //     return <Loading></Loading>;
     // } else {
-    return <div id="map">{isLoading ? <Loading></Loading> : null}</div>;
+    return (
+        <>
+            <div id="map">{isLoading ? <Loading></Loading> : null}</div>
+        </>
+    );
     // }
 }
